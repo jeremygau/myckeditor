@@ -62,3 +62,50 @@ Editor.builtinPlugins = [
 	Paragraph
 ];
 
+ClassicEditor.defaultConfig = {
+	toolbar: {
+		items: [
+			'undo',
+			'redo',
+			'|',
+			'heading',
+			'|',
+			'bold',
+			'italic',
+			'underline',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
+			'alignment',
+			'link',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
+			'imageUpload',
+			'blockQuote',
+			'insertTable',
+			'mediaEmbed',
+			'MathType',
+			'ChemType'
+		]
+	},
+	language: 'fr',
+	image: {
+		toolbar: [
+			'imageTextAlternative',
+			'imageStyle:full',
+			'imageStyle:side'
+		]
+	},
+	table: {
+		contentToolbar: [
+			'tableColumn',
+			'tableRow',
+			'mergeTableCells'
+		]
+	},
+	licenseKey: '',
+};
