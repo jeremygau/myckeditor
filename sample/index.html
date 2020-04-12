@@ -104,7 +104,7 @@
 	<script src="../build/ckeditor.js"></script>
 	<script>ClassicEditor
 			.create( document.querySelector( '.editor' ), {
-				
+
 				toolbar: {
 					items: [
 						'undo',
@@ -150,8 +150,18 @@
 					]
 				},
 				licenseKey: '',
-				
-			} )
+				simpleUpload: {
+					// The URL that the images are uploaded to.
+					uploadUrl: '../uploads',
+
+					// Headers sent along with the XMLHttpRequest to the upload server.
+					headers: {
+						'X-CSRF-TOKEN': 'CSFR-Token',
+						Authorization: 'Bearer <JSON Web Token>'
+					}
+
+				}
+			})
 			.then( editor => {
 				window.editor = editor;
 		
